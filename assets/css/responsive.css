@@ -1,0 +1,50 @@
+/* pc */
+@media (min-width: 1024px) {
+
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .common-section, 
+    .tour-info,
+    .band-members,
+    .tour-dates {
+        max-width: 100%;
+    }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .common-section, 
+    .tour-info,
+    .band-members,
+    .tour-dates {
+        max-width: 100%;
+    }
+
+    #slider .slider-content {
+        display: none;
+    }
+
+    #content .band-members {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #header .nav-search {
+        display: none;  
+    }
+    
+    #header .mobile-menu,
+    #nav li {
+        display: block;
+    }
+
+    
+}
