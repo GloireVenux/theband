@@ -73,6 +73,7 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
+    transition: height ease-out 1s;
 }
 
 #nav li {
@@ -375,7 +376,7 @@ html {
 
 #footer .footer-img {
     padding-top: 50%;
-    background: url('../img/map.jpg') top center / cover no-repeat;
+    background: url('../img/map.jpg') top center / cover no-repeat; 
 }
 
 #footer .footer-body {

@@ -10,7 +10,7 @@ const menuItems = document.querySelectorAll('#nav li a[href*="#"]')
 
 mobileMenu.addEventListener('click', function (){
     if (curHeight === header.clientHeight) {
-        header.style.height = 'auto'
+        header.style.height = '230px'
     }
     else {
         header.style.height = null
