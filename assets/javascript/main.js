@@ -45,8 +45,10 @@ for (const menuItem of menuItems) {
             header.classList.toggle('sub-menu-expand')
         }
         else {
-            header.classList.toggle('expand');
-            jsOverlay.classList.toggle('overlay-on')
+            if (header.classList.contains('expand') && jsOverlay.classList.contains('overlay-on')) {
+                header.classList.toggle('expand');
+                jsOverlay.classList.toggle('overlay-on')
+            }
         }
     })
 }

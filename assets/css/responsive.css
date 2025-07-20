@@ -1,6 +1,50 @@
 /* pc */
 @media (min-width: 1024px) {
+    #nav .subnav li:hover a,
+    #nav > li:hover > a {
+        color: #000;
+        background-color: #ccc;
+    }
 
+    #nav li:hover .subnav {
+        display: block;
+    }
+
+    #header .nav-search:hover {
+        background-color: #f44336;
+        cursor: pointer;
+    }
+
+    #header .mobile-menu:hover {
+        background-color: #bbb;
+        color: #000;
+    }
+
+    #content .tour-places .place-img:hover {
+        opacity: 0.6 ;
+    }
+
+    #content .tour-places .place-button:hover {
+        cursor: pointer;
+        background-color: #ccc;
+        color: #000;
+    }
+
+    #footer .logo a:hover {
+        cursor: auto;
+        opacity: 0.6;
+    }
+
+    .modal-buy:hover,
+    .modal-close:hover {
+        background-color: #ccc;
+        color: #000;
+        cursor: pointer;
+    }
+
+    #header.expand {
+        height: 46px;
+    }
 }
 
 /* tablet */
@@ -10,6 +54,10 @@
     .band-members,
     .tour-dates {
         max-width: 100%;
+    }
+
+    .modal-container {
+        min-width: 750px;
     }
 }
 
@@ -35,6 +83,21 @@
 
     #nav .subnav{
         position: initial;
+    }
+
+    #nav > li:active > a {
+        color: #000;
+        background-color: #ccc;
+    }
+
+    #nav li:hover .subnav {
+        display: inline-block;
+        width: 100%;
+    }
+
+    #header .mobile-menu:active {
+        background-color: #bbb;
+        color: #000;
     }
 
     .overlay-on {
@@ -77,9 +140,27 @@
         margin-bottom: 16px;
     }
 
+    #content .tour-places .place-button:active {
+        background-color: #ccc;
+        color: #000;
+    }
+
     #content .mobile-contact {
         width: 100%;
         margin-bottom: 16px;
+    }
+
+    .modal-container {
+        min-width: 100%;
+    }
+
+    .modal-buy:active {
+        background-color: #ccc;
+        color: #000;
+    }
+    }
+    .modal-close:active {
+        color: #000;
     }
 
     @keyframes overlay-on-ani {

@@ -104,15 +104,15 @@ html {
     display: inline-block;
 }
 
-#nav .subnav li:hover a,
+/* #nav .subnav li:hover a,
 #nav > li:hover > a {
     color: #000;
     background-color: #ccc;
-}
+} */
 
-#nav li:hover .subnav {
+/* #nav li:hover .subnav {
     display: block;
-}
+} */
 
 #nav .subnav {
     display: none;
@@ -155,15 +155,15 @@ html {
     display: none;
 }
 
-#header .nav-search:hover {
+/* #header .nav-search:hover {
     background-color: #f44336;
     cursor: pointer;
-}
+} */
 
-#header .mobile-menu:hover {
+/* #header .mobile-menu:hover {
     background-color: #bbb;
     color: #000;
-}
+} */
 
 /* Slider */
 #slider {
@@ -300,9 +300,9 @@ html {
     display: block;
 }
 
-#content .tour-places .place-img:hover {
+/* #content .tour-places .place-img:hover {
     opacity: 0.6 ;
-}
+} */
 
 #content .tour-places .place-info {
     background-color: #fff;
@@ -336,11 +336,11 @@ html {
     background-color: #000;
 }
 
-#content .tour-places .place-button:hover {
+/* #content .tour-places .place-button:hover {
     cursor: pointer;
     background-color: #ccc;
     color: #000;
-}
+} */
 
 #content .contact {
     margin-bottom: 96px;
@@ -403,10 +403,10 @@ html {
     font-size: 24px;
 }
 
-#footer .logo a:hover {
+/* #footer .logo a:hover {
     cursor: auto;
     opacity: 0.6;
-}
+} */
 
 #footer a {
     color: rgba(0, 0, 0, 0.6);
@@ -455,12 +455,12 @@ html {
     
 }
 
-.modal-buy:hover,
+/* .modal-buy:hover,
 .modal-close:hover {
     background-color: #ccc;
     color: #000;
     cursor: pointer;
-}
+} */
 
 .modal-body {
     padding: 16px;
