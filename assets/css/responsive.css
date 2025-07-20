@@ -59,6 +59,11 @@
     .modal-container {
         min-width: 750px;
     }
+
+    #nav li:hover .subnav {
+        display: block;
+        width: 100%;
+    }
 }
 
 /* mobile */
@@ -158,7 +163,7 @@
         background-color: #ccc;
         color: #000;
     }
-    }
+
     .modal-close:active {
         color: #000;
     }

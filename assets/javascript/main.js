@@ -41,7 +41,9 @@ for (const menuItem of menuItems) {
         var isParentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav')
         
         if (isParentMenu) {
-            header.classList.toggle('sub-menu-expand')
+            if (header.classList.contains('expand')) {
+                header.classList.toggle('sub-menu-expand')
+            }
             event.preventDefault()
         }
         else {
