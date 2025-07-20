@@ -72,13 +72,26 @@ html {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
-    transition: height ease-out 1s;
+    z-index: 2;
+    transition: height ease-out 0.5s;
+}
+
+#header.expand {
+    height: 230px;
+}
+
+#header.expand.sub-menu-expand {
+    height: 345px;
 }
 
 #nav li {
     display: inline-block;
     position: relative;
+}
+
+#nav .subnav li {
+    list-style-type: none;
+    display: inline-block;
 }
 
 #nav li a {

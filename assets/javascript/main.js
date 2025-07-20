@@ -2,24 +2,52 @@ const buyTicketsButtons = document.querySelectorAll('.js-buy-tickets')
 const modal = document.querySelector('.js-modal')
 const modalClose = document.querySelector('.js-modal-close')
 const modalContainer = document.querySelector('.js-modal-container')
+const jsOverlay = document.querySelector('.js-overlay')
 
 const mobileMenu = document.querySelector('.js-mobile-menu')
 const header = document.getElementById('header')
 var curHeight = header.clientHeight
 const menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+const navFirstChild = document.querySelector('.js-nav-fchild')
 
+// open mobile menu
 mobileMenu.addEventListener('click', function (){
-    if (curHeight === header.clientHeight) {
-        header.style.height = '230px'
-    }
-    else {
-        header.style.height = null
+    header.classList.toggle('expand');
+    jsOverlay.classList.toggle('overlay-on')
+    if (header.classList.contains('sub-menu-expand')) {
+        header.classList.remove('sub-menu-expand')
     }
 })
 
+jsOverlay.addEventListener('click', function (){
+    header.classList.toggle('expand');
+    jsOverlay.classList.toggle('overlay-on')
+})
+
+// Home mobile menu fix 
+const resizeObserver = new ResizeObserver(() => {
+    if (header.clientHeight === curHeight) {
+        navFirstChild.style.display = 'inline-block'
+    } else {
+        navFirstChild.style.display = 'block'
+    }
+})
+resizeObserver.observe(header)
+
+// close mobile menu when click on menu items
 for (const menuItem of menuItems) {
-    menuItem.addEventListener('click', function (){
-        header.style.height = null
+    
+    menuItem.addEventListener('click', function (event){
+        var isParentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav')
+        
+        if (isParentMenu) {
+            event.preventDefault()
+            header.classList.toggle('sub-menu-expand')
+        }
+        else {
+            header.classList.toggle('expand');
+            jsOverlay.classList.toggle('overlay-on')
+        }
     })
 }
 

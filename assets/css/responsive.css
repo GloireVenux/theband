@@ -15,6 +15,39 @@
 
 /* mobile */
 @media (max-width: 739px) {
+    #header {
+        overflow: hidden;
+    }
+
+    #header .nav-search {
+        display: none;  
+    }
+    
+    #header .mobile-menu,
+    #nav li,
+    #nav li a {
+        display: block;
+    }
+
+    #nav li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav{
+        position: initial;
+    }
+
+    .overlay-on {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        animation: overlay-on-ani ease 0.5s;
+    }
+
     .common-section, 
     .tour-info,
     .band-members,
@@ -26,25 +59,35 @@
         display: none;
     }
 
-    #content .band-members {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #content .common-section {
+        padding-bottom: 32px;
+    }
+
+    #content .mobile-members {
         width: 100%;
+        margin-top: 32px;
     }
 
-    #header {
-        overflow: hidden;
+    #content .member-img {
+        width: auto;
     }
 
-    #header .nav-search {
-        display: none;  
-    }
-    
-    #header .mobile-menu,
-    #nav li {
-        display: block;
+    #content .tour-places .mobile-places {
+        width: 100%;
+        margin-bottom: 16px;
     }
 
-    
+    #content .mobile-contact {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    @keyframes overlay-on-ani {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
 }

@@ -12,30 +12,33 @@
     
 </head>
 <body>
+    <div class="js-overlay" id="menu-mobile-overlay"></div>
     <div id="wrapper">
         <div id="header">
-            <ul id="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#band">Band</a></li>
-                <li><a href="#tour">Tour</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li>
-                    <a href="#">More <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                    <ul class="subnav">
-                        <li><a href="#">Merchandise</a></li>
-                        <li><a href="#">Extras</a></li>
-                        <li><a href="#">Media</a></li>
-                    </ul>
-                </li>
-            </ul>
 
-            <div class="nav-search">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </div>
+            <ul id="nav">
+                    <li class="js-nav-fchild"><a href="#">Home</a></li>
+                    <li><a href="#band">Band</a></li>
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="#">More <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul class="subnav">
+                            <li><a href="#">Merchandise</a></li>
+                            <li><a href="#">Extras</a></li>
+                            <li><a href="#">Media</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="nav-search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                
+                <div class="mobile-menu js-mobile-menu">
+                    <i class=" fa fa-bars" aria-hidden="true"></i>
+                </div>
             
-            <div class="mobile-menu js-mobile-menu">
-                <i class=" fa fa-bars" aria-hidden="true"></i>
-            </div>
         </div>
 
         <div id="slider">
@@ -56,15 +59,15 @@
                 </div>
 
                 <div class="row band-members">
-                    <div class="col col3">
+                    <div class="col col3 mobile-members">
                         <p class="member-name">Name</p>
                         <img class="member-img" src="./assets/img/bandmember.jpg" alt="">
                     </div>
-                    <div class="col col3">
+                    <div class="col col3 mobile-members">
                         <p class="member-name">Name</p>
                         <img class="member-img" src="./assets/img/bandmember.jpg" alt="">
                     </div>
-                    <div class="col col3">
+                    <div class="col col3 mobile-members">
                         <p class="member-name">Name</p>
                         <img class="member-img" src="./assets/img/bandmember.jpg" alt="">
                     </div>
@@ -86,7 +89,7 @@
                         </ul>
 
                         <div class="row tour-places">
-                            <div class="col col3">
+                            <div class="col col3 mobile-places">
                                 <img src="./assets/img/newyork.jpg" alt="" class="place-img">
                                 <div class="place-info">
                                     <h4 class="place-name">New York</h4>
@@ -99,7 +102,7 @@
                                 </div>
                             </div>
 
-                            <div class="col col3">
+                            <div class="col col3 mobile-places">
                                 <img src="./assets/img/paris.jpg" alt="" class="place-img">
                                 <div class="place-info">
                                     <h4 class="place-name">Paris</h4>
@@ -112,7 +115,7 @@
                                 </div>
                             </div>
 
-                            <div class="col col3">
+                            <div class="col col3 mobile-places">
                                 <img src="./assets/img/sanfran.jpg" alt="" class="place-img">
                                 <div class="place-info">
                                     <h4 class="place-name">San Francisco</h4>
@@ -140,7 +143,7 @@
                     <p class="sec-slog">Fan? Drop a note!</p>
 
                     <div class="row mt48">
-                        <div class="col col2">
+                        <div class="col col2 mobile-contact">
                             <p class="contact-info">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                                 Chicago, US
@@ -154,7 +157,7 @@
                                 Email: mail@mail.com
                             </p>
                         </div>
-                        <div class="col col2">
+                        <div class="col col2 mobile-contact">
                             <form action="">
                                 <div class="row">
                                     <div class="col col2">
