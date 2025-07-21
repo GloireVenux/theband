@@ -11,13 +11,19 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -4px;
-    margin-right: -4px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .col {
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .row.no-gutters {
@@ -340,13 +346,13 @@
 
 @media (min-width: 1113px) {
     .row {
-        margin-left: -12px;
-        margin-right: -12px;
+        margin-left: -8px;
+        margin-right: -8px;
     }
 
     .col {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     .l0 {
@@ -509,13 +515,13 @@
     }
 
     .wide .row {
-        margin-right: -12px;
-        margin-left: -12px;
+        margin-right: -8px;
+        margin-left: -8px;
     }
 
     .wide .col {
-        padding-right: 12px;
-        padding-left: 12px;
+        padding-right: 8px;
+        padding-left: 8px;
     }
 
     .wide .l0 {

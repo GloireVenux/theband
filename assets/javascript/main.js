@@ -42,7 +42,9 @@ for (const menuItem of menuItems) {
         
         if (isParentMenu) {
             if (header.classList.contains('expand')) {
-                header.classList.toggle('sub-menu-expand')
+                setTimeout(() => {
+                    header.classList.toggle('sub-menu-expand');
+                }, 25);
             }
             event.preventDefault()
         }

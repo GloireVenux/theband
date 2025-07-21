@@ -1,5 +1,12 @@
 /* pc */
 @media (min-width: 1024px) {
+    .common-section, 
+    .tour-info,
+    .band-members,
+    .tour-dates {
+        max-width: 100%;
+    }
+
     #nav .subnav li:hover a,
     #nav > li:hover > a {
         color: #000;

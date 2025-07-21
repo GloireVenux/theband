@@ -14,35 +14,6 @@ html {
     clear: both;
 }
 
-.row {
-    margin-left: -8px;
-    margin-right: -8px;
-}
-
-.row::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.col {
-    float: left;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-.col1 {
-    width: 100%;
-}
-
-.col2 {
-    width: 50%;
-}
-
-.col3 {
-    width: 33.33333333333333%;
-}
-
 .mt8 {
     margin-top: 8px;
 }
@@ -57,6 +28,10 @@ html {
 
 .mt48 {
     margin-top: 48px;
+}
+
+.mb16 {
+    margin-bottom: 16px;
 }
 
 /* Wrapper */
@@ -292,7 +267,7 @@ html {
 }
 
 #content .tour-places {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 #content .tour-places .place-img {
