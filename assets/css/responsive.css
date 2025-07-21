@@ -5,7 +5,7 @@
     .band-members,
     .tour-dates {
         max-width: 100%;
-    }
+    } 
 
     #nav .subnav li:hover a,
     #nav > li:hover > a {
